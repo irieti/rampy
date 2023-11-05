@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'polls/style.css' %}"
+    />
+    <meta charset="UTF-8" />
+    <title>Registration</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Register your business</h1>
+      <form action="{% url 'reciever' %}" method="post">
+        {% csrf_token %} {{ RecieverForm.as_table }}
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>

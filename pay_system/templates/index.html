@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Munzen Widget</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #303030;
+        color: #fff;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #1c1c1c;
+        border: 2px solid #454545;
+        border-radius: 10px;
+        text-align: center;
+      }
+
+      h1 {
+        font-size: 24px;
+      }
+
+      label {
+        display: block;
+        margin-top: 10px;
+      }
+
+      input {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        border: 1px solid #454545;
+        border-radius: 5px;
+        background-color: #272727;
+        color: #fff;
+      }
+
+      button {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        margin-top: 20px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Company Name</h1>
+      <h2>Product Name</h2>
+      <h2>Product Description</h2>
+      <iframe
+        id="inlineFrameExample"
+        width="416"
+        height="548"
+        frameborder="0"
+        src="https://stage-widget.munzen.io/?toCurrency=NEAR&toWallet=test.testnet&apiKey=f7bbdf09-4236-4858-b19f-8d17843ce675&signature=83ae87f28e46c5b2acdae4e72c11cdffcfea3ece138ab3a98f372a818975510c&merchantOrderId=f3442b228e82&toAmount=20"
+      >
+      </iframe>
+    </div>
+  </body>
+</html>

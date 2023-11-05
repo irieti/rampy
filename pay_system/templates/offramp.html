@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Wallet</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #303030;
+        color: #fff;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #1c1c1c;
+        border: 2px solid #454545;
+        border-radius: 10px;
+        text-align: center;
+      }
+
+      h1 {
+        font-size: 24px;
+      }
+
+      .transaction-list {
+        list-style: none;
+        padding: 0;
+      }
+
+      .transaction-list li {
+        border: 1px solid #454545;
+        border-radius: 5px;
+        margin: 10px 0;
+        padding: 10px;
+        background-color: #272727;
+        color: #fff;
+      }
+
+      .total-amount {
+        font-size: 18px;
+        margin-top: 10px;
+      }
+
+      .wallet-address {
+        font-size: 16px;
+        margin-top: 10px;
+      }
+
+      button {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        margin-top: 20px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Your Wallet</h1>
+      <div class="wallet-address">
+        Wallet Address: 0x0EC964fd9995BfC104937b88b12949d64C20D419
+      </div>
+      <ul class="transaction-list">
+        <li>Transaction 1: +1000 USDT</li>
+        <li>Transaction 2: -500 USDT</li>
+        <li>Transaction 3: +750 USDT</li>
+      </ul>
+      <div class="total-amount">
+        Total Amount: USDT<span id="total-amount">0</span>
+      </div>
+      <button>Redeem</button>
+    </div>
+    <script>
+      // Calculate and display the total amount
+      const transactions = [1000, 500, 750];
+      const totalAmount = transactions.reduce(
+        (total, amount) => total + amount,
+        0
+      );
+      document.getElementById("total-amount").textContent = totalAmount;
+    </script>
+  </body>
+</html>
