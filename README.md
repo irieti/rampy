@@ -1,3 +1,5 @@
 # rampy
 
-Rampy is an on-ramp - off-ramp service (crypto-fiat)
+Rampy is an on-ramp - off-ramp payment system (crypto-fiat)
+
+Made on ETH Lisbon Hackathon 
